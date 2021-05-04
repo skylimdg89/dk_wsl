@@ -6,11 +6,13 @@ filetype plugin indent on
 map <F8> :NERDTreeToggle<CR>
 map <F5> :GoRun %<CR>
 map <F4> :Tagbar Toggle<CR>
+map <F12> :%!python -m json.tool<CR>
 
 call plug#begin('~/.vim/plugged')
 "Plug 'scrooloose/nerdcommenter'
 Plug 'fatih/vim-go'
 Plug 'preservim/nerdtree'
+Plug 'elzr/vim-json'
 
 call plug#end()
 
